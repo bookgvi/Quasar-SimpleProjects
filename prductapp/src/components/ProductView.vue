@@ -15,7 +15,7 @@
         <td>{{ item.name }}</td>
         <td>{{ item.price }}</td>
         <td>
-          <q-btn color="primary" label="Edit" @click="hClick(item.id)" />
+          <q-btn color="primary" label="Edit" @click="hEdit(item)" />
         </td>
       </tr>
       </tbody>
@@ -24,11 +24,10 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 export default {
   data () {
     return {
-      isBlocked: true
     }
   },
   computed: {
@@ -37,8 +36,11 @@ export default {
     ])
   },
   methods: {
-    hClick (id) {
-      this.isBlocked = false
+    ...mapActions([
+      'editProduct'
+    ]),
+    hEdit (item) {
+      this.editProduct(item)
     }
   }
 }

@@ -1,3 +1,4 @@
 export const getters = {
-  products: state => state.products
+  products: state => state.products,
+  editingProduct: state => state.editingProduct
 }
