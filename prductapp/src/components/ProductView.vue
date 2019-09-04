@@ -42,7 +42,7 @@ export default {
     ]),
     hEdit (item) {
       this.editProduct(item)
-      this.$router.push(`/edit/`)
+      this.$router.push(`/edit/${item.id}`, () => {})
     }
   }
 }

@@ -1,12 +1,10 @@
 <template>
-  <div>
     <q-input clearable
       :label="label"
       :disable="isBlocked"
       v-model="editField"
       :mask="vMask"
     />
-  </div>
 </template>
 
 <script>

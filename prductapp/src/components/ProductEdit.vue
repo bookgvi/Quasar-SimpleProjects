@@ -1,15 +1,13 @@
 <template>
-  <div class="flex flex-center">
-    <div class="row">
-      <div class="col-12 q-ml-lg">
-        <edit-fields label="ID" :isBlocked="editingProduct.isDisable" :val="editingProduct.id"/>
-        <edit-fields label="NAME" :isBlocked="editingProduct.isDisable" :val="editingProduct.name"/>
-        <edit-fields label="PRICE" :isBlocked="editingProduct.isDisable" :val="editingProduct.price"/>
-        <q-btn color="primary" label="Save" @click="saveChanges" class="q-my-sm"/>
-        <q-btn color="primary" label="Cancel" @click="cancel" class="q-mx-sm"/>
-      </div>
-    </div>
-  </div>
+  <q-card class="q-mx-lg">
+    <q-card-section>
+      <edit-fields label="ID" :isBlocked="editingProduct.isDisable" :val="editingProduct.id"/>
+      <edit-fields label="NAME" :isBlocked="editingProduct.isDisable" :val="editingProduct.name"/>
+      <edit-fields label="PRICE" :isBlocked="editingProduct.isDisable" :val="editingProduct.price"/>
+      <q-btn color="primary" label="Save" @click="saveChanges" class="q-my-sm"/>
+      <q-btn color="primary" label="Cancel" @click="cancel" class="q-mx-sm"/>
+    </q-card-section>
+  </q-card>
 </template>
 
 <script>
