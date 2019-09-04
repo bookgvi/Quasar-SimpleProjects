@@ -1,6 +1,6 @@
 <template>
   <div class="q-pa-lg">
-    <q-markup-table>
+    <q-markup-table separator="horizontal">
       <thead>
       <tr>
         <th>ID</th>
@@ -15,7 +15,7 @@
         <td>{{ item.name }}</td>
         <td>{{ item.price }}</td>
         <td>
-          <q-btn outline color="primary" label="Edit" @click="hEdit(item)" class="q-pa-xs" />
+          <q-btn outline color="grey" label="Edit" @click="hEdit(item)" class="q-pa-xs" />
         </td>
       </tr>
       </tbody>

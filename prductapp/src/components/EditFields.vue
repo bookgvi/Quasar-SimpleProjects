@@ -4,6 +4,7 @@
       :label="label"
       :disable="isBlocked"
       v-model="editField"
+      :mask="vMask"
     />
   </div>
 </template>
@@ -29,6 +30,17 @@ export default {
       set (e) {
         this.setValue({ label: this.label.toLowerCase(), val: e })
       }
+    },
+    vMask () {
+      let mask
+      if (this.label === 'ID') {
+        mask = '####'
+      } else if (this.label === 'PRICE') {
+        mask = '#########'
+      } else {
+        mask = 'NNNNNNNNNNNNNNNNNNNNNN'
+      }
+      return mask
     }
   },
   methods: {
