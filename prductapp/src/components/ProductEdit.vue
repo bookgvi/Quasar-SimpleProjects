@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-center">
     <div class="row">
-      <div class="col-12 q-ma-lg">
+      <div class="col-12 q-ml-lg">
         <edit-fields label="ID" :isBlocked="editingProduct.isDisable" :val="editingProduct.id"/>
         <edit-fields label="NAME" :isBlocked="editingProduct.isDisable" :val="editingProduct.name"/>
         <edit-fields label="PRICE" :isBlocked="editingProduct.isDisable" :val="editingProduct.price"/>

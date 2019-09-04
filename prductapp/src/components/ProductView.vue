@@ -1,6 +1,6 @@
 <template>
-  <div class="q-pa-lg text-center">
-    <q-markup-table separator="horizontal">
+  <div class="flex-center q-pa-lg text-center row">
+    <q-markup-table separator="horizontal" class="col-6">
       <thead>
       <tr>
         <th>ID</th>
@@ -20,6 +20,7 @@
       </tr>
       </tbody>
     </q-markup-table>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -41,7 +42,7 @@ export default {
     ]),
     hEdit (item) {
       this.editProduct(item)
-      this.$router.push('/edit')
+      this.$router.push(`/edit/`)
     }
   }
 }

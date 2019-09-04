@@ -5,8 +5,12 @@ const routes = [
     component: () => import('layouts/MyLayout.vue'),
     children: [
       // { path: '', component: () => import('pages/Index.vue') },
-      { path: '', component: () => import('components/ProductView') },
-      { path: '/edit', component: () => import('components/ProductEdit') }
+      { path: '',
+        component: () => import('components/ProductView'),
+        children: [
+          { path: '/edit', component: () => import('components/ProductEdit') }
+        ]
+      }
     ]
   }
 ]
