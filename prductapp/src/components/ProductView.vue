@@ -1,5 +1,5 @@
 <template>
-  <div class="q-pa-md">
+  <div class="q-pa-lg">
     <q-markup-table>
       <thead>
       <tr>
@@ -15,7 +15,7 @@
         <td>{{ item.name }}</td>
         <td>{{ item.price }}</td>
         <td>
-          <q-btn color="primary" label="Edit" @click="hEdit(item)" />
+          <q-btn outline rounded color="primary" label="Edit" @click="hEdit(item)"  />
         </td>
       </tr>
       </tbody>

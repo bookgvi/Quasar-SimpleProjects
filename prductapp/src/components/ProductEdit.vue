@@ -1,10 +1,10 @@
 <template>
-  <div>
+  <div class="q-pt-sm">
     <edit-fields label="ID" :isBlocked="editingProduct.isDisable" :val="editingProduct.id"/>
     <edit-fields label="NAME" :isBlocked="editingProduct.isDisable" :val="editingProduct.name"/>
     <edit-fields label="PRICE" :isBlocked="editingProduct.isDisable" :val="editingProduct.price"/>
-    <q-btn color="primary" label="Save" @click="saveChanges" />
-    <q-btn color="primary" label="Cancel" @click="clearProductFields" />
+    <q-btn color="primary" label="Save" @click="saveChanges" class="q-my-sm"/>
+    <q-btn color="primary" label="Cancel" @click="clearProductFields" class="q-mx-sm"/>
   </div>
 </template>
 
