@@ -1,6 +1,7 @@
 <template>
   <q-page class="flex flex-center">
 <!--    <img alt="Quasar logo" src="~assets/quasar-logo-full.svg">-->
+    <product-view />
   </q-page>
 </template>
 
@@ -8,14 +9,11 @@
 </style>
 
 <script>
-import { mapGetters } from 'vuex'
+import ProductView from '../components/ProductView'
 export default {
   name: 'PageIndex',
-  computed: {
-    ...mapGetters([
-      'fuck',
-      'a'
-    ])
+  components: {
+    ProductView
   }
 }
 </script>
