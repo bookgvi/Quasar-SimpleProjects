@@ -15,7 +15,7 @@
         <td>{{ item.name }}</td>
         <td>{{ item.price }}</td>
         <td>
-          <q-btn outline rounded color="primary" label="Edit" @click="hEdit(item)"  />
+          <q-btn outline color="primary" label="Edit" @click="hEdit(item)" class="q-pa-xs" />
         </td>
       </tr>
       </tbody>
