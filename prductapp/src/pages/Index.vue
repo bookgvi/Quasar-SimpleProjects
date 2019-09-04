@@ -1,6 +1,8 @@
 <template>
   <q-page class="flex flex-center">
 <!--    <img alt="Quasar logo" src="~assets/quasar-logo-full.svg">-->
+    {{ a }}
+    {{ fuck }}
   </q-page>
 </template>
 
@@ -8,7 +10,14 @@
 </style>
 
 <script>
+import { mapGetters } from 'vuex'
 export default {
-  name: 'PageIndex'
+  name: 'PageIndex',
+  computed: {
+    ...mapGetters([
+      'fuck',
+      'a'
+    ])
+  }
 }
 </script>

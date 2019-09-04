@@ -1,9 +1,12 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import { state } from 'state'
+import { state } from './storex/state'
+import { getters } from './storex/getters'
 
 Vue.use(Vuex)
 
-export const store =  new Vuex.Store({
-  state
+const store = new Vuex.Store({
+  state,
+  getters
 })
+export default store
