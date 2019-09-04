@@ -1,8 +1,8 @@
 <template>
   <div>
-    <edit-fields label="ID" :isBlocked="editingProduct.isDisable" :val="editingProduct.id" @editValue="getNewVal"/>
-    <edit-fields label="NAME" :isBlocked="editingProduct.isDisable" :val="editingProduct.name" @editValue="getNewVal"/>
-    <edit-fields label="PRICE" :isBlocked="editingProduct.isDisable" :val="editingProduct.price" @editValue="getNewVal"/>
+    <edit-fields label="ID" :isBlocked="editingProduct.isDisable" :val="editingProduct.id"/>
+    <edit-fields label="NAME" :isBlocked="editingProduct.isDisable" :val="editingProduct.name"/>
+    <edit-fields label="PRICE" :isBlocked="editingProduct.isDisable" :val="editingProduct.price"/>
     <q-btn color="primary" label="Save" @click="saveChanges" />
     <q-btn color="primary" label="Cancel" @click="clearProductFields" />
   </div>
@@ -16,12 +16,7 @@ export default {
     EditFields
   },
   data: () => ({
-    isNew: false,
-    newProduct: {
-      id: '',
-      name: '',
-      price: ''
-    }
+    isNew: false
   }),
   computed: {
     ...mapGetters([
@@ -34,9 +29,6 @@ export default {
       'addNew',
       'modifyThis'
     ]),
-    getNewVal (e) {
-      this.newProduct[e.label] = e.val
-    },
     saveChanges () {
       this.modifyThis()
       this.clearProductFields()
