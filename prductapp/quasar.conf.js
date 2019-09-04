@@ -45,7 +45,8 @@ module.exports = function (ctx) {
         'QItem',
         'QItemSection',
         'QItemLabel',
-        'QMarkupTable'
+        'QMarkupTable',
+        'QInput'
       ],
 
       directives: [

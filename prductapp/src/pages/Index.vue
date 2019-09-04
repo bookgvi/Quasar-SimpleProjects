@@ -2,6 +2,7 @@
   <q-page class="flex flex-center">
 <!--    <img alt="Quasar logo" src="~assets/quasar-logo-full.svg">-->
     <product-view />
+    <product-edit />
   </q-page>
 </template>
 
@@ -10,9 +11,11 @@
 
 <script>
 import ProductView from '../components/ProductView'
+import ProductEdit from '../components/ProductEdit'
 export default {
   name: 'PageIndex',
   components: {
+    ProductEdit,
     ProductView
   }
 }
