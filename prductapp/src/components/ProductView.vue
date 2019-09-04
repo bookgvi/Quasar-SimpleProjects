@@ -1,5 +1,5 @@
 <template>
-  <div class="q-pa-lg">
+  <div class="q-pa-lg text-center">
     <q-markup-table separator="horizontal">
       <thead>
       <tr>
@@ -41,6 +41,7 @@ export default {
     ]),
     hEdit (item) {
       this.editProduct(item)
+      this.$router.push('/edit')
     }
   }
 }
