@@ -1,7 +1,7 @@
 <template>
   <q-card class="q-mx-lg">
     <q-card-section>
-      <edit-fields label="ID" :isBlocked="editingProduct.isDisable" :val="editingProduct.id"/>
+      <edit-fields label="ID" :isBlocked="editingProduct.isDisable" :val="editingProduct.id" />
       <edit-fields label="NAME" :isBlocked="editingProduct.isDisable" :val="editingProduct.name"/>
       <edit-fields label="PRICE" :isBlocked="editingProduct.isDisable" :val="editingProduct.price"/>
       <q-btn color="primary" label="Save" @click="saveChanges" class="q-my-sm"/>
@@ -24,9 +24,6 @@ export default {
     ...mapGetters([
       'editingProduct'
     ])
-  },
-  created () {
-    console.dir(this.$route)
   },
   methods: {
     ...mapActions([
