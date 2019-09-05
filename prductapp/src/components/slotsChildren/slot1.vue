@@ -10,7 +10,7 @@
     </q-card>
     <q-card class="col-4 text-center">
         <q-card-section>
-          <slot name="slot2">
+          <slot name="slot2" :val="value">
             <h4> This is the slot2!!!</h4>
             {{ value.second }}
           </slot>
