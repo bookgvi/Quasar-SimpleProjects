@@ -4,17 +4,29 @@ const routes = [
     path: '/',
     component: () => import('layouts/MyLayout.vue'),
     children: [
-      // { path: '', component: () => import('pages/Index.vue') },
       {
-        path: '',
-        component: () => import('components/ProductView'),
+        path: 'products/',
+        component: () => import('pages/Index.vue'),
         children: [
           {
-            path: 'edit/:id',
-            component: () => import('components/ProductEdit')
+            path: '',
+            component: () => import('components/ProductView'),
+            children: [
+              {
+                path: 'edit/:id',
+                component: () => import('components/ProductEdit')
+              }
+            ]
           }
         ]
       }
+      // {
+      //   page: '/slots',
+      //   component: () => import('pages/learningSlots'),
+      //   children: [
+      //     { path: 'slot1', component: () => import('components/slots') }
+      //   ]
+      // }
     ]
   }
 ]
