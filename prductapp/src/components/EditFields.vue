@@ -4,7 +4,13 @@
       :disable="isBlocked"
       v-model="editField"
       :mask="vMask"
-    />
+      counter
+      hint="This is the hint"
+    >
+      <template #hint>
+        <span>Before Holly Vue!</span>
+      </template>
+    </q-input>
 </template>
 
 <script>
