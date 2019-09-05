@@ -22,14 +22,14 @@ const routes = [
           },
           { path: '', redirect: 'view' }
         ]
+      },
+      {
+        path: '/slots',
+        component: () => import('pages/learningSlots'),
+        children: [
+          { path: 'slot1', component: () => import('components/slots') }
+        ]
       }
-      // {
-      //   page: '/slots',
-      //   component: () => import('pages/learningSlots'),
-      //   children: [
-      //     { path: 'slot1', component: () => import('components/slots') }
-      //   ]
-      // }
     ]
   }
 ]
