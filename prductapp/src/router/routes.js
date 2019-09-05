@@ -27,7 +27,8 @@ const routes = [
         path: '/slots',
         component: () => import('pages/learningSlots'),
         children: [
-          { path: 'slot1', component: () => import('components/slots') }
+          { path: '/slot1', component: () => import('components/slotParent') }
+          // { path: '', redirect: 'slot1' }
         ]
       }
     ]

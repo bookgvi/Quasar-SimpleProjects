@@ -48,7 +48,8 @@ module.exports = function (ctx) {
         'QMarkupTable',
         'QInput',
         'QCard',
-        'QCardSection'
+        'QCardSection',
+        'QCheckbox'
       ],
 
       directives: [
