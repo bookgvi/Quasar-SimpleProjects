@@ -25,6 +25,9 @@ export default {
       'editingProduct'
     ])
   },
+  created () {
+    console.dir(this.$route)
+  },
   methods: {
     ...mapActions([
       'clearProductFields',
@@ -34,11 +37,11 @@ export default {
     saveChanges () {
       this.modifyThis()
       this.clearProductFields()
-      this.$router.replace('/products')
+      this.$router.replace({ name: 'prodView' })
     },
     cancel () {
       this.clearProductFields()
-      this.$router.replace('/products')
+      this.$router.replace({ name: 'prodView' })
     }
   }
 }

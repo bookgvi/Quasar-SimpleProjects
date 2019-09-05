@@ -1,16 +1,16 @@
 
 const routes = [
   {
-    path: '',
+    path: '/',
     component: () => import('layouts/MyLayout.vue'),
     children: [
       {
-        path: 'products',
+        path: '/products',
         component: () => import('pages/Index.vue'),
         children: [
           {
-            path: '',
             name: 'prodView',
+            path: '/view',
             component: () => import('components/ProductView'),
             children: [
               {
@@ -20,7 +20,7 @@ const routes = [
               }
             ]
           },
-          { path: '', redirect: 'view' }
+          { path: '', redirect: '/view' }
         ]
       },
       {
