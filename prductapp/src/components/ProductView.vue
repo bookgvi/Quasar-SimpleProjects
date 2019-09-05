@@ -42,7 +42,7 @@ export default {
     ]),
     hEdit (item) {
       this.editProduct(item)
-      this.$router.push(`/edit/${item.id}`, () => {})
+      this.$router.push({ name: 'prodEdit', params: { id: item.id } }, () => {})
     }
   }
 }

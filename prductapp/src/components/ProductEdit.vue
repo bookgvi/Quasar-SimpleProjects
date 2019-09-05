@@ -34,11 +34,11 @@ export default {
     saveChanges () {
       this.modifyThis()
       this.clearProductFields()
-      this.$router.replace('/')
+      this.$router.replace('/products')
     },
     cancel () {
       this.clearProductFields()
-      this.$router.replace('/')
+      this.$router.replace('/products')
     }
   }
 }

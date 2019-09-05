@@ -1,5 +1,5 @@
 <template>
-  <q-page class="flex">
+  <q-page>
 <!--    <img alt="Quasar logo" src="~assets/quasar-logo-full.svg">-->
     <router-view />
 <!--    <product-view />-->
