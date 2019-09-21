@@ -4,5 +4,6 @@ export const getters = {
     return state.products.slice(itemStart, itemStart + state.rowsPerPage)
   },
   currentPage: state => state.currentPage,
-  maxPages: state => Math.ceil(state.products.length / state.rowsPerPage)
+  maxPages: state => Math.ceil(state.products.length / state.rowsPerPage),
+  rowsPerPage: state => state.rowsPerPage
 }

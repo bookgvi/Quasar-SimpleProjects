@@ -4,6 +4,6 @@ for (let i = 1; i <= 10; i++) {
 }
 export const state = {
   products: datas,
-  rowsPerPage: 4,
+  rowsPerPage: 5,
   currentPage: 1
 }
