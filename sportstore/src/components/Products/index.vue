@@ -3,7 +3,7 @@
     .row
       .col-4.bg-primary
         .text-h4 Categories
-      .col-8.bg-green
+      .col-8.bg-grey-2
         ProducList
 </template>
 
