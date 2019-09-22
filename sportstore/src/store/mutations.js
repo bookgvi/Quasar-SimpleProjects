@@ -8,6 +8,7 @@ export const mutations = {
     state.rowsPerPage = payload
   },
   [types.SET_CURRENT_CATEGORY]: (state, payload) => {
+    state.currentPage = 1
     state.currentCategory = payload
   }
 }

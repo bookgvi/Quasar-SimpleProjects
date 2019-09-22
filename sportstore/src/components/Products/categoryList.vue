@@ -1,8 +1,13 @@
 <template lang="pug">
   .category-class
     .row.q-pb-md(v-for="(item, index) in getUniqCategories" :key="index")
-      q-card
-        .text-h6.q-pa-sm(@click="setCurrentCategory(item)") {{ item }}
+      .col
+        q-card
+          .text-h6.q-pa-sm.cursor-pointer(@click="setCurrentCategory(item)") {{ item }}
+    .row
+      .col
+        q-card
+          .text-h6.q-pa-sm.cursor-pointer(@click="setCurrentCategory('all')") All
 </template>
 
 <script>

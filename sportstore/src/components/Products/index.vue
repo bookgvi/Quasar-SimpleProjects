@@ -1,6 +1,6 @@
 <template lang="pug">
   .row
-    .col-4.bg-primary.q-pl-lg.q-py-lg
+    .col-4.bg-primary.q-pa-lg
       .text-h4.q-pb-lg Categories
       .row
         .col
