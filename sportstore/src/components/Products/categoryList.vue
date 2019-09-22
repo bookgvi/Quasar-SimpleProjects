@@ -2,18 +2,24 @@
   .category-class
     .row.q-pb-md(v-for="(item, index) in getUniqCategories" :key="index")
       .col
-        q-card
-          .text-h6.q-pa-sm.cursor-pointer(@click="setCurrentCategory(item)") {{ item }}
+        q-card.cursor-pointer(@click="hClick(item, index)" :class="{ 'bg-info': isActive[index] }")
+          .row
+            .text-h6.q-pa-sm {{ item }}
     .row
       .col
-        q-card
-          .text-h6.q-pa-sm.cursor-pointer(@click="setCurrentCategory('all')") All
+        q-card.cursor-pointer(@click="hClick('all', 'all')" :class="{ 'bg-info': isAll }")
+          .text-h6.q-pa-sm All
 </template>
 
 <script>
 import { mapGetters, mapActions } from 'vuex'
+import Vue from 'vue'
 export default {
   name: 'categoryList',
+  data: () => ({
+    isActive: [],
+    isAll: false
+  }),
   computed: {
     ...mapGetters([
       'getFilteredCategories',
@@ -23,7 +29,12 @@ export default {
   methods: {
     ...mapActions([
       'setCurrentCategory'
-    ])
+    ]),
+    hClick (item, index) {
+      this.isActive = []
+      Vue.set(this.isActive, index, 'true')
+      this.setCurrentCategory(item)
+    }
   }
 }
 </script>
