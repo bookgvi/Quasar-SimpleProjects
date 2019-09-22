@@ -7,7 +7,7 @@
             .text-h6.q-pa-sm {{ item }}
     .row
       .col
-        q-card.cursor-pointer(@click="hClick('all', 'all')" :class="{ 'bg-info': isAll }")
+        q-card.cursor-pointer(@click="hClick('all')" :class="{ 'bg-info': isAll }")
           .text-h6.q-pa-sm All
 </template>
 
@@ -20,6 +20,8 @@ export default {
     isActive: [],
     isAll: false
   }),
+  mounted () {
+  },
   computed: {
     ...mapGetters([
       'getFilteredCategories',
@@ -31,8 +33,15 @@ export default {
       'setCurrentCategory'
     ]),
     hClick (item, index) {
-      this.isActive = []
-      Vue.set(this.isActive, index, 'true')
+      if (item !== 'all') {
+        this.isActive = []
+        this.isAll = false
+        Vue.set(this.isActive, index, 'true')
+        this.setCurrentCategory(item)
+      } else {
+        this.isActive = []
+        this.isAll = true
+      }
       this.setCurrentCategory(item)
     }
   }
