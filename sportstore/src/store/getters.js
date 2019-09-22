@@ -1,7 +1,7 @@
 export const getters = {
   getUniqCategories: state => {
     const arr = state.products.map(item => item.category)
-    return new Set(arr.filter(item => arr.filter(elem => elem === item)))
+    return [...new Set(arr.filter(item => arr.filter(elem => elem === item)))]
   },
   getFilteredCategories: state =>
     state.products.filter(item =>

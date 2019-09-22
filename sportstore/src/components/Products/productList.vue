@@ -1,32 +1,18 @@
 <template lang="pug">
   .products-class
-    .row.q-py-lg.q-pl-xl(v-for="item in getProducts" :key="item.id")
-      q-card
-        .text-h6 {{ item.name }}
-    .row
-      q-select.q-pl-lg(:value="rowsPerPage" :options="options" @input ="setRowsPerPage" outlined dense)
-      q-pagination.q-pl-lg(:value="currentPage", :max="maxPages" @click="setPage($event.target.innerText)")
+    .row.q-py-sm(v-for="item in getProducts" :key="item.id")
+      .col
+        q-card.q-px-md.q-py-md
+          .text-h6 {{ item.name }}
 </template>
 
 <script>
-import { mapGetters, mapActions } from 'vuex'
+import { mapGetters } from 'vuex'
 export default {
   name: 'productList',
-  data: () => ({
-    options: [2, 3, 5, 10, 20]
-  }),
   computed: {
     ...mapGetters([
-      'getProducts',
-      'maxPages',
-      'currentPage',
-      'rowsPerPage'
-    ])
-  },
-  methods: {
-    ...mapActions([
-      'setPage',
-      'setRowsPerPage'
+      'getProducts'
     ])
   }
 }
