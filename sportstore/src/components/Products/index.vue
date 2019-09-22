@@ -1,17 +1,20 @@
 <template lang="pug">
-  .products
-    .row
-      .col-4.bg-primary
-        .text-h4 Categories
-      .col-8.bg-grey-2
-        ProducList
+  .row
+    .col-4.bg-primary.q-pl-lg.q-py-lg
+      .text-h4.q-pb-lg Categories
+      .row
+        .col
+          CategoryList
+    .col-8.bg-grey-2
+      ProductList
 </template>
 
 <script>
-import ProducList from './productList'
+import ProductList from './productList'
+import CategoryList from './categoryList'
 export default {
   name: 'productPage',
-  components: { ProducList }
+  components: { ProductList, CategoryList }
 }
 </script>
 

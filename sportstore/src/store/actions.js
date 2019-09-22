@@ -5,5 +5,8 @@ export const actions = {
   },
   setRowsPerPage: ({ commit }, payload) => {
     commit(types.SET_ROWS_PER_PAGE, payload)
+  },
+  setCurrentCategory: ({ commit }, payload) => {
+    commit(types.SET_CURRENT_CATEGORY, payload)
   }
 }

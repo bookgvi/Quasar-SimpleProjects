@@ -1,6 +1,6 @@
 <template lang="pug">
   .products-class
-    .row.q-py-lg.q-pl-xl(v-for="item in getProduct" :key="item.id")
+    .row.q-py-lg.q-pl-xl(v-for="item in getProducts" :key="item.id")
       q-card
         .text-h6 {{ item.name }}
     .row
@@ -17,7 +17,7 @@ export default {
   }),
   computed: {
     ...mapGetters([
-      'getProduct',
+      'getProducts',
       'maxPages',
       'currentPage',
       'rowsPerPage'
