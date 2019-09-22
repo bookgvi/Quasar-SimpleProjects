@@ -3,7 +3,14 @@
     .row.q-py-sm(v-for="item in getProducts" :key="item.id")
       .col
         q-card.q-px-md.q-py-md
-          .text-h6 {{ item.name }}
+          .row
+            .col
+              .text-h6 {{ item.name }}
+            .col-3
+              q-chip
+                .text-h6 $ {{ item.price }}
+          .row
+            .inline-block {{ item.description }}
 </template>
 
 <script>

@@ -1,5 +1,8 @@
 import * as types from './mutation-types'
 export const mutations = {
+  [types.SET_PRODUCTS]: (state, payload) => {
+    state.products = payload
+  },
   [types.SET_PAGE]: (state, payload) => {
     state.currentPage = +payload
   },

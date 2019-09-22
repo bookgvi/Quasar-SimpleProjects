@@ -20,8 +20,6 @@ export default {
     isActive: [],
     isAll: false
   }),
-  mounted () {
-  },
   computed: {
     ...mapGetters([
       'getFilteredCategories',

@@ -20,12 +20,21 @@
 import ProductList from './productList'
 import CategoryList from './categoryList'
 import Pagination from './pagination'
+import { mapActions } from 'vuex'
 export default {
   name: 'productPage',
   components: {
     ProductList,
     CategoryList,
     Pagination
+  },
+  async mounted () {
+    await this.fetchData()
+  },
+  methods: {
+    ...mapActions([
+      'fetchData'
+    ])
   }
 }
 </script>
