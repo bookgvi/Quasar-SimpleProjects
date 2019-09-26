@@ -72,6 +72,10 @@ module.exports = function (ctx) {
           options: {
             formatter: require('eslint').CLIEngine.getFormatter('stylish')
           }
+        }),
+        cfg.module.rules.push({
+          test: /\.(pug)$/,
+          loader: 'pug-plain-loader',
         })
       }
     },
