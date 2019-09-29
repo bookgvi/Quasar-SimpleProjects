@@ -7,7 +7,7 @@
         @click="currentTab = tab"
         :class="{ active: currentTab === tab }"
       ) {{ tab }}
-      .row(style="height: 640px; border: 1px solid black")
+      .row(style="height: 1640px; border: 1px solid black")
         .col.q-pa-lg
           .inline-block(:is="currentTab")
 </template>

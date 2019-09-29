@@ -1,7 +1,7 @@
 <template lang="pug">
   q-layout(view="lHh Lpr lFf")
-    q-page-container.q-pt-md.q-px-xl
-      TopMenu.q-pb-lg
+    q-page-container
+      TopMenu
       .row.justify-center
         .col-9
           router-view
