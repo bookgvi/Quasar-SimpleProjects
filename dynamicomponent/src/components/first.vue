@@ -1,4 +1,6 @@
 <template lang="pug">
+  .first
+    .text-h4 First component
 </template>
 
 <script>

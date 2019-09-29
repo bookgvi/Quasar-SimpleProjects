@@ -1,9 +1,11 @@
 <template lang="pug">
   q-page
+    first
 </template>
 
 <script>
+import first from '../components/first'
 export default {
-  // name: 'PageName',
+  components: { first }
 }
 </script>
