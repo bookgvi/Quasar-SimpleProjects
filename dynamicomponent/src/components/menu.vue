@@ -1,11 +1,11 @@
 <template lang="pug">
   q-tabs
     q-route-tab(to="first")
-      .inline-block QQQ
+      .inline-block.text-uppercase first
     q-route-tab(to="second")
-      .inline-block WWW
+      .inline-block.text-uppercase second
     q-route-tab(to="third")
-      .inline-block EEE
+      .inline-block.text-uppercase third
 </template>
 
 <script>
