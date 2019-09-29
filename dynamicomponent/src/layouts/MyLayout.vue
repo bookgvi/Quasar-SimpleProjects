@@ -1,8 +1,10 @@
 <template lang="pug">
   q-layout(view="lHh Lpr lFf")
-    q-page-container
+    q-page-container.q-pt-md
       TopMenu
-      router-view
+      .row.q-pt-md.justify-between
+        .com-9.q-px-xl
+          router-view
 </template>
 
 <script>

@@ -1,8 +1,10 @@
 <template lang="pug">
-  q-toolbar
-    q-toolbar-title
+  q-tabs
+    q-route-tab(to="first")
       .inline-block QQQ
+    q-route-tab(to="second")
       .inline-block WWW
+    q-route-tab(to="third")
       .inline-block EEE
 </template>
 
