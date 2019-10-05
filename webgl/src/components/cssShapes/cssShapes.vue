@@ -26,10 +26,10 @@ export default {
     background: #ffffff;
   }
   .triangle {
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
+    width: 200px;
+    height: 200px;
+    border-left: 50px solid #000;
+    border-right: 50px solid #aaa;
     border-bottom: 100px solid #777;
   }
   .circle {
