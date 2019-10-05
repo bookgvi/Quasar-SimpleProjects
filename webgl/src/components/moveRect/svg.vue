@@ -16,8 +16,8 @@
           :min="0"
         )
     .row.justify-center
-      .col-11
-        svg.q-ma-lg.bg-grey-3(:width="svgMaxWidth" :height="svgMaxHeight")
+      .col
+        svg.q-ml-sm.bg-grey-3(:width="svgMaxWidth" :height="svgMaxHeight")
           rect(
             :x="maxX"
             :y="maxY"
@@ -29,8 +29,8 @@
 <script>
 export default {
   data () {
-    const svgMaxWidth = 800
-    const svgMaxHeight = 600
+    const svgMaxWidth = document.documentElement.clientWidth - 20
+    const svgMaxHeight = document.documentElement.clientHeight * 0.7
     const moveX = {
       min: 0,
       max: svgMaxWidth

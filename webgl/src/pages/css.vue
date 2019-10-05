@@ -1,6 +1,5 @@
 <template lang="pug">
-  q-page
-    cssShape
+  cssShape
 </template>
 
 <script>

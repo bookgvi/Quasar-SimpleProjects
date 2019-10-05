@@ -4,7 +4,7 @@ const routes = [
     path: '/',
     component: () => import('layouts/MyLayout.vue'),
     children: [
-      { path: 'svg', component: () => import('pages/svg.vue') },
+      { path: 'svg', component: () => import('pages/moveRect.vue') },
       { path: 'css', component: () => import('pages/css.vue') }
     ]
   }

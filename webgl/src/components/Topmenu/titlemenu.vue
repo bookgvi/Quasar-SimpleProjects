@@ -1,7 +1,8 @@
 <template lang="pug">
   .topMenu.q-pt-lg
-    q-tabs
-      vueLogo(:width=50 :height=30)
+    .row.justify-center
+      vueLogo(:width=50 :height=40)
+    q-tabs(align="center")
       q-route-tab(to="css" label="css")
       q-route-tab(to="svg" label="svg")
 </template>
