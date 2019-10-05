@@ -1,28 +1,66 @@
 <template lang="pug">
-  svg.q-ma-lg
-    rect(
-      x="10"
-      y="20"
-      width="150"
-      height="100"
-    )
-    circle(
-      cx="225"
-      cy="75"
-      r="50"
-    )
+  .svgShapes
+    .row.justify-center.q-py-md
+      .text-h4 Move rectangle
+    .row
+      .col-6.q-px-xl x: {{ moveX.min }}/{{ moveX.max }}
+        q-range(
+          v-model.number="moveX"
+          :max="svgMaxWidth"
+          :min="0"
+        )
+      .col-6.q-px-xl y: {{ moveY.min }}/{{ moveY.max }}
+        q-range(
+          v-model.number="moveY"
+          :max="svgMaxHeight"
+          :min="0"
+        )
+    .row.justify-center
+      .col-11
+        svg.q-ma-lg.bg-grey-3(:width="svgMaxWidth" :height="svgMaxHeight")
+          rect(
+            :x="maxX"
+            :y="maxY"
+            :width="rectW"
+            :height="rectH"
+          )
 </template>
 
 <script>
 export default {
   data () {
-    return {}
+    const svgMaxWidth = 800
+    const svgMaxHeight = 600
+    const moveX = {
+      min: 0,
+      max: svgMaxWidth
+    }
+    const moveY = {
+      min: 0,
+      max: svgMaxHeight
+    }
+    return {
+      rectW: 150,
+      rectH: 100,
+      svgMaxWidth,
+      svgMaxHeight,
+      moveX,
+      moveY
+    }
+  },
+  computed: {
+    maxX () {
+      return Math.min(this.moveX.min + 2, this.svgMaxWidth - this.rectW - 2)
+    },
+    maxY () {
+      return Math.min(this.moveY.min + 2, this.svgMaxHeight - this.rectH - 2)
+    }
   }
 }
 </script>
 
 <style scoped>
-  circle {
+  rect {
     fill: orange;
     stroke: black;
     stroke-width: 2px;
