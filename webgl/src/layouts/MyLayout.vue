@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import titleMenu from '../components/topmenu/titlemenu'
+import titleMenu from '../components/Topmenu/titlemenu'
 export default {
   name: 'MyLayout',
   components: { titleMenu },
