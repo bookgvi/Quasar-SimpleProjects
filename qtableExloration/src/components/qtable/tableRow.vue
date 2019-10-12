@@ -3,6 +3,7 @@
     q-td(
       v-for="({ active, name, __tdClass }, index) in cols"
       :key="index"
+      @click.native="modalDialog(row)"
       :class="[active ? activeX : '', __tdClass]"
     )
       template(v-if="name === 'id'")
@@ -20,7 +21,12 @@ export default {
   },
   data: () => ({
     activeX: 'active'
-  })
+  }),
+  methods: {
+    modalDialog (rowData) {
+      this.$emit('rowDialog', rowData)
+    }
+  }
 }
 </script>
 
