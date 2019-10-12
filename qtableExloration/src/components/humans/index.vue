@@ -1,6 +1,6 @@
 <template lang="pug">
   .qtable.q-pt-lg
-    .row.justify-center
+    .row.q-pb-md.justify-center
       .col-6
         qtableComponent(
           :columns="columns"
@@ -8,6 +8,8 @@
           tableTitle="Humans"
           @rowDialog="rowDialog"
         )
+    .row.justify-center
+      .qqq {{ data }}
     q-dialog(v-model="isModal")
       q-card
         modalDialog(
@@ -46,9 +48,18 @@ export default {
       this.isModal = false
     },
     saveChanges (value) {
+      // First way of changing data
       for (let key in value) {
         Vue.set(this.rowData, key, value[key])
       }
+      // second way
+      // this.data.forEach(item => {
+      //   if (item.id === value.id) {
+      //     for (let key in value) {
+      //       Vue.set(item, key, value[key])
+      //     }
+      //   }
+      // })
     }
   }
 }
