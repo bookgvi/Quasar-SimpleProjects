@@ -1,10 +1,10 @@
 <template lang="pug">
   q-tr
-    q-td(v-for="({ name, __tdClass }, index) in cols" :key="index" :class="__tdClass")
-      template(v-if="name === 'id'") {{ row.id }}
-        span
-      template(v-if="name === 'firstName'") {{ row.firstName }}
-        span
+    q-td(v-for="({ active, name, __tdClass }, index) in cols" :key="index" :class="[active ? activeX : '', __tdClass]")
+      template(v-if="name === 'id'")
+        span {{ row.id }}
+      template(v-if="name === 'firstName'")
+        span {{ row.firstName }}
 </template>
 
 <script>
@@ -13,10 +13,15 @@ export default {
   props: {
     row: Object,
     cols: Array
-  }
+  },
+  data: () => ({
+    activeX: 'active'
+  })
 }
 </script>
 
 <style scoped>
-
+  .active {
+    cursor: pointer;
+  }
 </style>
