@@ -62,7 +62,9 @@ module.exports = function (ctx) {
         'QTd',
         'QPopupEdit',
         'QInput',
-        'QDialog'
+        'QDialog',
+        'QCard',
+        'QIcon'
       ],
 
       directives: [

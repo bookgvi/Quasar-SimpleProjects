@@ -6,27 +6,48 @@
           :columns="columns"
           :data="data"
           tableTitle="Humans"
+          :rowData="rowData"
+          @rowDialog="rowDialog"
         )
+    q-dialog(v-model="isModal")
+      q-card
+        modalDialog(:rowData="rowData" @hasModal="hasModal")
 </template>
 
 <script>
 import qtableComponent from '../qtable'
 import columns from './columns'
+import modalDialog from './modalDialog'
 export default {
   name: 'index',
   components: {
-    qtableComponent
+    qtableComponent,
+    modalDialog
   },
   data: () => ({
     columns,
     data: [
       { id: 1, firstName: 'John' },
       { id: 2, firstName: 'Yan' }
-    ]
-  })
+    ],
+    isModal: false,
+    rowData: {}
+  }),
+  methods: {
+    rowDialog (rowData) {
+      this.rowData = rowData
+      this.isModal = true
+    },
+    hasModal () {
+      console.log('hasModal')
+      this.isModal = false
+    }
+  }
 }
 </script>
 
 <style scoped>
-
+.q-card {
+  min-width: 600px;
+}
 </style>
