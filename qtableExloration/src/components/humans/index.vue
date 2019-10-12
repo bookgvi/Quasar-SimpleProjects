@@ -48,7 +48,7 @@ export default {
       this.isModal = false
     },
     saveChanges (value) {
-      // First way of changing data
+      // First way to change data
       for (let key in value) {
         Vue.set(this.rowData, key, value[key])
       }
