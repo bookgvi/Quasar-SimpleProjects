@@ -1,13 +1,12 @@
-<template>
-    $END$
-</template>
-
-<script>
-  export default {
-    name: "columns"
+export default [
+  {
+    name: 'id',
+    label: 'id',
+    field: 'id'
+  },
+  {
+    name: 'firstName',
+    label: 'Name',
+    field: 'firstName'
   }
-</script>
-
-<style scoped>
-
-</style>
+]
