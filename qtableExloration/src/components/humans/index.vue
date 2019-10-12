@@ -8,8 +8,6 @@
           tableTitle="Humans"
           @rowDialog="rowDialog"
         )
-    .row.justify-center
-      .qqq {{ data }}
     q-dialog(v-model="isModal")
       q-card
         modalDialog(
