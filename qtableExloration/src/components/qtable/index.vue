@@ -4,8 +4,10 @@
       :columns="columns"
       :data="data"
     )
-      template(#header)
+      template(#top-left)
         .text-h4.q-pa-sm {{ tableTitle }}
+      template(#header-cell="props")
+        q-th.text-center.text-grey {{ props.col.label }}
       template(#body="props")
         table-row(v-bind="props")
       template(#bottom)
