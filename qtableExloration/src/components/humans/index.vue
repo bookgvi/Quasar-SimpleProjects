@@ -11,10 +11,15 @@
         )
     q-dialog(v-model="isModal")
       q-card
-        modalDialog(:rowData="rowData" @hasModal="hasModal")
+        modalDialog(
+          :rowData="rowData"
+          @hasModal="hasModal"
+          @saveChanges="saveChanges"
+        )
 </template>
 
 <script>
+import Vue from 'vue'
 import qtableComponent from '../qtable'
 import columns from './columns'
 import modalDialog from './modalDialog'
@@ -39,8 +44,12 @@ export default {
       this.isModal = true
     },
     hasModal () {
-      console.log('hasModal')
       this.isModal = false
+    },
+    saveChanges (value) {
+      for (let key in value) {
+        Vue.set(this.rowData, key, value[key])
+      }
     }
   }
 }
