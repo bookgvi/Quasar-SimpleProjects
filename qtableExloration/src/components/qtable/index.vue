@@ -9,7 +9,7 @@
       template(#header-cell="props")
         q-th.text-center.text-grey {{ props.col.label }}
       template(#body="props")
-        table-row(v-bind="props" :rowData="rowData" @rowDialog="rowDialog")
+        table-row(v-bind="props" @rowDialog="rowDialog")
       template(#bottom)
         span {{ tableBottom }}
 </template>
@@ -22,8 +22,7 @@ export default {
     columns: Array,
     data: Array,
     tableTitle: String,
-    tableBottom: String,
-    rowData: Object
+    tableBottom: String
   },
   methods: {
     rowDialog (rowData) {

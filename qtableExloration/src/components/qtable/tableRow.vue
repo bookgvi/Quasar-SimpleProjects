@@ -17,8 +17,7 @@ export default {
   name: 'tableRow',
   props: {
     row: Object,
-    cols: Array,
-    rowData: Object
+    cols: Array
   },
   data: () => ({
     activeX: 'active'

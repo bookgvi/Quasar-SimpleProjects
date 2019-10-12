@@ -6,7 +6,6 @@
           :columns="columns"
           :data="data"
           tableTitle="Humans"
-          :rowData="rowData"
           @rowDialog="rowDialog"
         )
     q-dialog(v-model="isModal")
