@@ -42,6 +42,10 @@ export default {
       },
       [
         createElement('q-btn', {
+          class: {
+            'bg-grey': true,
+            'text-white': true
+          },
           on: {
             click: this.addInput
           }
