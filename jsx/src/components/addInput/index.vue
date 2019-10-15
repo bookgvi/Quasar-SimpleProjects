@@ -16,8 +16,9 @@ export default {
     [
       createElement('div', {
         class: {
-          'inline-block': true,
-          'col-4': true
+          'inputBlock': true,
+          'col-4': true,
+          'q-pr-md': true
         }
       },
       [
@@ -27,8 +28,7 @@ export default {
           },
           class: {
             'q-field--outlined': true,
-            'q-field--dense': true,
-            'q-pr-md': true
+            'q-field--dense': true
           },
           on: {
             input: this.inputChange
@@ -56,10 +56,19 @@ export default {
   },
   methods: {
     addInput () {
-      console.log('btn clicked!')
+      const inputBlock = document.querySelector('.inputBlock')
+      const newInput = document.createElement('input')
+      const appendInput = inputBlock.appendChild(newInput)
+      appendInput.style.width = '100%'
+      appendInput.style.height = '2.5rem'
+      appendInput.classList.add('q-mt-md')
+      appendInput.oninput = this.input
     },
     inputChange (value) {
       this.input1 = value
+    },
+    input (value) {
+      console.log(value)
     }
   }
 }
