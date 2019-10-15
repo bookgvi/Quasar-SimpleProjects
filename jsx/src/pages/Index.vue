@@ -1,11 +1,12 @@
-<template>
-  <q-page class="flex flex-center">
-    <img alt="Quasar logo" src="~assets/quasar-logo-full.svg">
-  </q-page>
+<template lang="pug">
+  q-page
+    add-input
 </template>
 
 <script>
+import addInput from '../components/addInput'
 export default {
-  name: 'PageIndex'
+  name: 'PageIndex',
+  components: { addInput }
 }
 </script>
