@@ -1,10 +1,11 @@
 <template lang="pug">
-  .input
-    .row
-      .input.col
-        q-input(v-model="input1" outlined dense)
-      .col
-        q-btn(label="Add field")
+  .input.row.q-pt-lg.justify-center
+    .col-9
+      .row
+        .input.col.q-pr-sm
+          q-input(v-model="input1" outlined dense)
+        .col
+          q-btn.bg-grey.text-white(label="Add field")
 </template>
 
 <script>
@@ -15,7 +16,3 @@ export default {
   })
 }
 </script>
-
-<style scoped>
-
-</style>
