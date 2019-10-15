@@ -8,7 +8,9 @@ export default {
     const wrap = createElement('div', {
       class: {
         row: true,
-        'no-wrap': true
+        'no-wrap': true,
+        'q-mt-xl': true,
+        'q-ml-xl': true
       }
     },
     [
