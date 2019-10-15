@@ -1,8 +1,11 @@
 <script>
+import Vue from 'vue'
 export default {
   name: 'index',
   data: () => ({
     inputCount: -1,
+    inputArr: [],
+    message: '',
     input1: 'QQQ'
   }),
   render (createElement) {
@@ -25,7 +28,7 @@ export default {
       [
         createElement('q-input', {
           attrs: {
-            value: this.input1
+            value: this.message
           },
           class: {
             'q-field--outlined': true,
@@ -66,12 +69,18 @@ export default {
       appendInput.style.height = '2.5rem'
       appendInput.classList.add('q-mt-md')
       appendInput.oninput = this.input
+      this.message = ''
+      console.log(this.inputArr)
     },
     inputChange (value) {
       this.input1 = value
     },
     input (value) {
-      console.log(value)
+      const num = value.target.dataset.number
+      this.message += value.data
+      const objectWithData = { id: num, message: this.message }
+      Vue.set(this.inputArr, num, objectWithData)
+      console.log(this.inputArr[num].message)
     }
   }
 }
