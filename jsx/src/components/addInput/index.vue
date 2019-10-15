@@ -20,14 +20,16 @@ export default {
       },
       [
         createElement('q-input', {
-          value: this.input1,
+          attrs: {
+            value: this.input1
+          },
           class: {
             'q-field--outlined': true,
             'q-field--dense': true,
             'q-pr-md': true
           },
           on: {
-            change: this.inputChange
+            input: this.inputChange
           }
         })
       ]),
@@ -51,7 +53,7 @@ export default {
       console.log('btn clicked!')
     },
     inputChange (value) {
-      console.log('Inside inputChange method', value)
+      this.input1 = value
     }
   }
 }
