@@ -8,7 +8,7 @@
           @hInput="hInput"
         )
       .row
-        q-btn(label="Studios" @click="getStudios" outlined dense)
+        q-btn.bg-primary.text-white(label="Get phone number" @click="getStudios" outlined dense no-caps style="width: 50%;")
 
 </template>
 
@@ -27,7 +27,7 @@ export default {
     },
     async getStudios () {
       const relURL = 'cabinet/v1.0/'
-      const { items } = await this.$http({ url: relURL + 'studios', method: 'GET' }).then(resp => resp.data.data)
+      const { items } = await this.$http.get(`${relURL}studios`).then(resp => resp.data.data)
       this.firstStudio = items[0]
       this.isPhoneInput = true
     }

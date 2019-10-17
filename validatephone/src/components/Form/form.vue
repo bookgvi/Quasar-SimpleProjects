@@ -1,14 +1,22 @@
 <template lang="pug">
   .form
     .row.q-pb-md
-      q-input(
-        v-if="isPhoneInput"
-        :value="reformatPhoneNumber(firstStudio.phone) | phoneFormat"
-        @change.native="hInput"
-        placeholder="+7 (900) 800 1234"
-        outlined
-        dense
-      )
+      .col
+        q-input(
+          v-if="!isPhoneInput"
+          style="width: 150%;"
+          outlined
+          dense
+        )
+        q-input(
+          v-if="isPhoneInput"
+          :value="reformatPhoneNumber(firstStudio.phone) | phoneFormat"
+          @change.native="hInput"
+          placeholder="+7 (900) 800 1234"
+          style="width: 150%;"
+          outlined
+          dense
+        )
 </template>
 
 <script>
