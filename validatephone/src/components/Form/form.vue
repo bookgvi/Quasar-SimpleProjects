@@ -19,10 +19,18 @@ export default {
   },
   data: () => ({
   }),
+  filters: {
+    phoneFormat (phone) {
+    }
+  },
   methods: {
     hInput (e) {
       let value = e.target.value
-      console.log(value)
+      value = this.reformatPhoneNumber(value)
+      this.$emit('hInput', value)
+    },
+    reformatPhoneNumber (phone) {
+      return String(phone.split('').filter(item => !isNaN(item) && item !== ' ').join(''))
     }
   }
 }
