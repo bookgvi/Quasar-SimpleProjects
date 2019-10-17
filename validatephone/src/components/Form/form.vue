@@ -21,14 +21,6 @@
     .row.q-pb-md
       .col
         q-input(
-          v-if="!isPhoneInput"
-          style="width: 150%;"
-          placeholder="email@domain.com"
-          outlined
-          dense
-        )
-        q-input(
-          v-if="isPhoneInput"
           :value="firstStudio.email"
           @change.native="hEmail"
           placeholder="email@domain.com"
