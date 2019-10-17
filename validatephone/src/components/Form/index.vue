@@ -12,7 +12,7 @@ import FormComponent from './form'
 export default {
   components: { FormComponent },
   data: () => ({
-    tel: '+8 (999) 888 1234'
+    tel: '+qwe8 (фывц--999) 888 1234'
   }),
   methods: {
     hInput (value) {

@@ -4,7 +4,7 @@
       span Enter number:
     .row.q-pb-md
       q-input(
-        :value="tel"
+        :value="reformatPhoneNumber(tel) | phoneFormat"
         @change.native="hInput"
         placeholder="+7 (900) 800 1234"
         outlined
@@ -17,10 +17,10 @@ export default {
   props: {
     tel: String
   },
-  data: () => ({
-  }),
   filters: {
     phoneFormat (phone) {
+      const formatPhone = phone.replace(/(^.)(\d..?)(\d..?)(\d...?)(.*)/, '+$1 ($2) $3 $4')
+      return formatPhone
     }
   },
   methods: {
