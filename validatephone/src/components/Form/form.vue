@@ -19,7 +19,7 @@ export default {
   },
   filters: {
     phoneFormat (phone) {
-      const formatPhone = phone.replace(/(^.)(\d..?)(\d..?)(\d...?)(.*)/, '+$1 ($2) $3 $4')
+      const formatPhone = phone.replace(/(^.)?(\d..?)(\d..?)?(\d...?)(.*)/, '+$1 ($2) $3 $4')
       return formatPhone
     }
   },
