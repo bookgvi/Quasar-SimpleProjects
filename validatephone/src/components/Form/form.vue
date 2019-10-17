@@ -1,10 +1,9 @@
 <template lang="pug">
   .form
-    .row.q-pb-sm
-      span Enter number:
     .row.q-pb-md
       q-input(
-        :value="reformatPhoneNumber(tel) | phoneFormat"
+        v-if="isPhoneInput"
+        :value="reformatPhoneNumber(firstStudio.phone) | phoneFormat"
         @change.native="hInput"
         placeholder="+7 (900) 800 1234"
         outlined
@@ -15,7 +14,8 @@
 <script>
 export default {
   props: {
-    tel: String
+    isPhoneInput: Boolean,
+    firstStudio: Object
   },
   filters: {
     phoneFormat (phone) {
