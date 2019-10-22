@@ -44,6 +44,8 @@ export default {
     }
   },
   async created () {
+    console.log(this.$route)
+    console.log(window.location.href)
   }
 }
 </script>
