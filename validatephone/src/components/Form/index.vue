@@ -34,9 +34,8 @@ export default {
     },
     async getStudios () {
       const { data } = await this.$http.get(`${this.relURL}studios/`).then(resp => resp.data)
-      console.log(data)
-      this.firstStudio = data
-      this.studioID = data.id
+      this.firstStudio = data.items[0]
+      this.studioID = data.items[0].id
       this.isPhoneInput = true
     },
     async setStudios () {
