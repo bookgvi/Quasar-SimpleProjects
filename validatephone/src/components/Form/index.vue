@@ -33,7 +33,8 @@ export default {
       this.firstStudio.email = value
     },
     async getStudios () {
-      const { data } = await this.$http.get(`${this.relURL}studios/37`).then(resp => resp.data)
+      const { data } = await this.$http.get(`${this.relURL}studios/`).then(resp => resp.data)
+      console.log(data)
       this.firstStudio = data
       this.studioID = data.id
       this.isPhoneInput = true
