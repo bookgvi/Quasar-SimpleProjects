@@ -45,7 +45,7 @@ export default {
   },
   async created () {
     console.log(this.$route)
-    console.log(window.location.href)
+    console.log(window.location.hostname)
   }
 }
 </script>
