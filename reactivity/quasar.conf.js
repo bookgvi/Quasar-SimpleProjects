@@ -90,6 +90,12 @@ module.exports = function (ctx) {
             formatter: require('eslint').CLIEngine.getFormatter('stylish')
           }
         })
+      },
+      extendWebpack (cfg) {
+        cfg.module.rules.push({
+          test: /\.(pug)$/,
+          loader: 'pug-plain-loader'
+        })
       }
     },
 
