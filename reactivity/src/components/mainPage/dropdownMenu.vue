@@ -4,7 +4,7 @@
       v-model="grp"
       :options="options"
       type="checkbox"
-      style="border: 1px solid silver; width: 100%;"
+      :style="[style, { display: showMenu }]"
     )
 </template>
 
@@ -13,11 +13,25 @@ export default {
   name: 'dropdownMenu',
   props: {
     options: Array,
-    grp: Array
+    grp: Array,
+    isShow: Boolean
+  },
+  data () {
+    return {
+      show: false,
+      click: 0,
+      style: {
+        border: '1px solid silver',
+        width: '100%',
+      }
+    }
+  },
+  computed: {
+    showMenu: {
+      get () {
+        return this.isShow ? 'block' : 'none'
+      }
+    }
   }
 }
 </script>
-
-<style scoped>
-
-</style>

@@ -2,11 +2,11 @@
   .mainPage
     .row
       .col-2
-        q-btn.q-ma-none.q-mb-sm(label="Some text 1" style="width: 100%;")
-        dropdown-menu(:options="options1", :grp="grp1")
+        q-btn.q-ma-none.q-mb-sm(label="Some text 1" style="width: 100%;" @click="hasShow('isShow1')")
+        dropdown-menu(:options="options1", :grp="grp1" :isShow="isShow.isShow1")
       .col-2.q-pl-sm
-        q-btn.q-ma-none.q-mb-sm(label="Some text 2" style="width: 100%;")
-        dropdown-menu(:options="options2", :grp="grp2")
+        q-btn.q-ma-none.q-mb-sm(label="Some text 2" style="width: 100%;" @click="hasShow('isShow2')")
+        dropdown-menu(:options="options2", :grp="grp2" :isShow="isShow.isShow2")
 </template>
 
 <script>
@@ -27,8 +27,27 @@ export default {
         { label: 'Fifth', value: 'fifth'},
         { label: 'Six', value: 'six'}
       ],
-      grp2: ['op2']
+      grp2: ['op2'],
+      isShow: {
+        isShow1: true,
+        isShow2: false
+      }
     }
+  },
+  methods: {
+    hasShow (val) {
+      for (let key in this.isShow) {
+        key !== val ? this.isShow[key] = false : undefined
+      }
+      this.isShow[val] = !this.isShow[val]
+    }
+  },
+  created () {
+    document.addEventListener('keydown', event => {
+      if (event.code === 'Escape') {
+        this.hideAll()
+      }
+    })
   }
 }
 </script>
