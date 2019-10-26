@@ -7,6 +7,9 @@
       .col-2.q-pl-sm
         q-btn.q-ma-none.q-mb-sm(label="Some text 2" style="width: 100%;" @click="hasShow('isShow2')")
         dropdown-menu(:options="options2", :grp="grp2" :isShow="isShow.isShow2")
+      .col-2.q-pl-sm
+        q-btn.q-ma-none.q-mb-sm(label="Some text 3" style="width: 100%;" @click="hasShow('isShow3')")
+        dropdown-menu(:options="options2", :grp="grp2" :isShow="isShow.isShow3")
 </template>
 
 <script>
@@ -29,8 +32,9 @@ export default {
       ],
       grp2: ['op2'],
       isShow: {
-        isShow1: true,
-        isShow2: false
+        isShow1: false,
+        isShow2: false,
+        isShow3: false
       }
     }
   },
@@ -40,6 +44,11 @@ export default {
         key !== val ? this.isShow[key] = false : undefined
       }
       this.isShow[val] = !this.isShow[val]
+    },
+    hideAll () {
+      for (let key in this.isShow) {
+        this.isShow[key] = false
+      }
     }
   },
   created () {
