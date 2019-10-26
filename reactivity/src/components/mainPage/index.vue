@@ -41,9 +41,8 @@ export default {
   methods: {
     hasShow (val) {
       for (let key in this.isShow) {
-        key !== val ? this.isShow[key] = false : undefined
+        key !== val ? this.isShow[key] = false : this.isShow[val] = !this.isShow[val]
       }
-      this.isShow[val] = !this.isShow[val]
     },
     hideAll () {
       for (let key in this.isShow) {
