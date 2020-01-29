@@ -10,7 +10,7 @@ module.exports = function (ctx) {
     ],
 
     css: [
-      'app.scss'
+      'app.sass'
     ],
 
     extras: [
@@ -45,7 +45,7 @@ module.exports = function (ctx) {
       plugins: []
     },
 
-    supportIE: true,
+    supportIE: false,
 
     build: {
       scopeHoisting: true,
@@ -63,6 +63,10 @@ module.exports = function (ctx) {
           options: {
             formatter: require('eslint').CLIEngine.getFormatter('stylish')
           }
+        }),
+        cfg.module.rules.push({
+          test: /\.(pug)$/,
+          loader: 'pug-plain-loader',
         })
       }
     },
@@ -84,9 +88,9 @@ module.exports = function (ctx) {
       // workboxPluginMode: 'InjectManifest',
       // workboxOptions: {}, // only for NON InjectManifest
       manifest: {
-        // name: 'Sportstore',
-        // short_name: 'Sportstore',
-        // description: 'test sportstore project',
+        // name: 'Quasar App',
+        // short_name: 'Quasar App',
+        // description: 'A Quasar Framework app',
         display: 'standalone',
         orientation: 'portrait',
         background_color: '#ffffff',
