@@ -1,0 +1,380 @@
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+2019-09-21 19:03:42,068 [ 280105]   WARN - pl.local.NativeFileWatcherImpl - Watcher terminated with exit code 3 
+2019-09-21 19:03:42,295 [ 280332]   WARN - pl.local.NativeFileWatcherImpl - Watcher terminated with exit code 3 
+2019-09-21 19:03:42,633 [ 280670]   WARN - pl.local.NativeFileWatcherImpl - Watcher terminated with exit code 3 
+2019-09-21 19:03:43,039 [ 281076]   WARN - pl.local.NativeFileWatcherImpl - Watcher terminated with exit code 3 
+2019-09-21 19:03:43,360 [ 281397]   WARN - pl.local.NativeFileWatcherImpl - Watcher terminated with exit code 3 
+2019-09-21 19:03:43,944 [ 281981]   WARN - pl.local.NativeFileWatcherImpl - Watcher terminated with exit code 3 
+2019-09-21 19:03:44,411 [ 282448]   WARN - pl.local.NativeFileWatcherImpl - Watcher terminated with exit code 3 
+2019-09-21 19:03:44,876 [ 282913]   WARN - pl.local.NativeFileWatcherImpl - Watcher terminated with exit code 3 
+2019-09-21 19:03:45,316 [ 283353]   WARN - pl.local.NativeFileWatcherImpl - Watcher terminated with exit code 3 
+2019-09-21 19:03:45,643 [ 283680]   WARN - pl.local.NativeFileWatcherImpl - Watcher terminated with exit code 3 
+2019-09-21 19:03:45,645 [ 283682]   WARN - api.vfs.impl.local.FileWatcher - File watcher failed to start 
+2019-09-21 19:05:02,683 [ 360720]   WARN - ewvfs.persistent.RefreshWorker - /root/WebstormProjects/Quasar-SimpleProjects/sportstore/node_modules/.bin/quasar 
+java.nio.file.NoSuchFileException: /root/WebstormProjects/Quasar-SimpleProjects/sportstore/node_modules/.bin/quasar
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:145)
+	at java.base/sun.nio.fs.LinuxFileSystemProvider.readAttributes(LinuxFileSystemProvider.java:99)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1763)
+	at com.intellij.openapi.vfs.newvfs.persistent.VfsEventGenerationHelper$1.visitFile(VfsEventGenerationHelper.java:129)
+	at com.intellij.openapi.vfs.newvfs.persistent.VfsEventGenerationHelper$1.visitFile(VfsEventGenerationHelper.java:102)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2724)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2796)
+	at com.intellij.openapi.vfs.newvfs.persistent.VfsEventGenerationHelper.scanChildren(VfsEventGenerationHelper.java:152)
+	at com.intellij.openapi.vfs.newvfs.persistent.VfsEventGenerationHelper.scheduleCreation(VfsEventGenerationHelper.java:70)
+	at com.intellij.openapi.vfs.newvfs.persistent.RefreshWorker.fullDirRefresh(RefreshWorker.java:202)
+	at com.intellij.openapi.vfs.newvfs.persistent.RefreshWorker.processQueue(RefreshWorker.java:127)
+	at com.intellij.openapi.vfs.newvfs.persistent.RefreshWorker.scan(RefreshWorker.java:99)
+	at com.intellij.openapi.vfs.newvfs.RefreshSessionImpl.scan(RefreshSessionImpl.java:149)
+	at com.intellij.openapi.vfs.newvfs.RefreshQueueImpl.doScan(RefreshQueueImpl.java:171)
+	at com.intellij.openapi.vfs.newvfs.RefreshQueueImpl.lambda$queueSession$1(RefreshQueueImpl.java:98)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.doRun(BoundedTaskExecutor.java:207)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.access$100(BoundedTaskExecutor.java:29)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.lambda$run$0(BoundedTaskExecutor.java:185)
+	at com.intellij.util.ConcurrencyUtil.runUnderThreadName(ConcurrencyUtil.java:208)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.run(BoundedTaskExecutor.java:181)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-09-21 19:23:53,691 [1491728]   WARN - ewvfs.persistent.RefreshWorker - /root/WebstormProjects/Quasar-SimpleProjects/sportstore/node_modules/.bin/quasar 
+java.nio.file.NoSuchFileException: /root/WebstormProjects/Quasar-SimpleProjects/sportstore/node_modules/.bin/quasar
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:145)
+	at java.base/sun.nio.fs.LinuxFileSystemProvider.readAttributes(LinuxFileSystemProvider.java:99)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1763)
+	at com.intellij.openapi.vfs.newvfs.persistent.VfsEventGenerationHelper$1.visitFile(VfsEventGenerationHelper.java:129)
+	at com.intellij.openapi.vfs.newvfs.persistent.VfsEventGenerationHelper$1.visitFile(VfsEventGenerationHelper.java:102)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2724)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2796)
+	at com.intellij.openapi.vfs.newvfs.persistent.VfsEventGenerationHelper.scanChildren(VfsEventGenerationHelper.java:152)
+	at com.intellij.openapi.vfs.newvfs.persistent.VfsEventGenerationHelper.scheduleCreation(VfsEventGenerationHelper.java:70)
+	at com.intellij.openapi.vfs.newvfs.persistent.RefreshWorker.fullDirRefresh(RefreshWorker.java:202)
+	at com.intellij.openapi.vfs.newvfs.persistent.RefreshWorker.processQueue(RefreshWorker.java:127)
+	at com.intellij.openapi.vfs.newvfs.persistent.RefreshWorker.scan(RefreshWorker.java:99)
+	at com.intellij.openapi.vfs.newvfs.RefreshSessionImpl.scan(RefreshSessionImpl.java:149)
+	at com.intellij.openapi.vfs.newvfs.RefreshQueueImpl.doScan(RefreshQueueImpl.java:171)
+	at com.intellij.openapi.vfs.newvfs.RefreshQueueImpl.lambda$queueSession$1(RefreshQueueImpl.java:98)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.doRun(BoundedTaskExecutor.java:207)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.access$100(BoundedTaskExecutor.java:29)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.lambda$run$0(BoundedTaskExecutor.java:185)
+	at com.intellij.util.ConcurrencyUtil.runUnderThreadName(ConcurrencyUtil.java:208)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.run(BoundedTaskExecutor.java:181)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-09-21 19:28:27,324 [1765361]   WARN - j.openapi.wm.impl.IdeFrameImpl - Set preferredFocusableComponent in 'npm install in Quasar-SimpleProjects/prductapp' content in Run tool window to avoid focus-related problems. 
+2019-09-21 19:28:27,326 [1765363]   WARN - j.openapi.wm.impl.IdeFrameImpl - npm install in Quasar-SimpleProjects/prductapp tool window - parent container is hidden 
+2019-09-21 19:29:16,139 [1814176]   WARN - j.openapi.wm.impl.IdeFrameImpl - Set preferredFocusableComponent in 'npm install in Quasar-SimpleProjects/prductapp' content in Run tool window to avoid focus-related problems. 
+2019-09-21 19:29:16,139 [1814176]   WARN - j.openapi.wm.impl.IdeFrameImpl - npm install in Quasar-SimpleProjects/prductapp tool window - parent container is hidden 
+2019-09-21 19:29:55,189 [1853226]   WARN - ess.util.ProgressIndicatorBase - This progress indicator is indeterminate, this may lead to visual inconsistency. Please call setIndeterminate(false) before you start progress.
+com.intellij.openapi.vcs.impl.CodeSmellDetectorImpl.findCodeSmells(CodeSmellDetectorImpl.java:136) 
+2019-09-21 19:30:18,676 [1876713]   WARN - ess.util.ProgressIndicatorBase - This progress indicator is indeterminate, this may lead to visual inconsistency. Please call setIndeterminate(false) before you start progress.
+git4idea.commands.GitStandardProgressAnalyzer$1.onLineAvailable(GitStandardProgressAnalyzer.java:45) 
+** Message: 19:30:29.912: Remote error from secret service: org.freedesktop.DBus.Error.UnknownMethod: Интерфейс «org.freedesktop.Secret.Collection» для пути /org/freedesktop/secrets/collection/login объекта не найден
+2019-09-21 19:30:29,913 [1887950]  ERROR - redentialStore.CredentialStore - secret_password_store_sync error code 32623, error message null 
+java.lang.Throwable: secret_password_store_sync error code 32623, error message null
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:145)
+	at com.intellij.credentialStore.SecretCredentialStore.set(linuxSecretLibrary.kt:167)
+	at com.intellij.credentialStore.NativeCredentialStoreWrapper$set$1.invoke(NativeCredentialStoreWrapper.kt:83)
+	at com.intellij.credentialStore.NativeCredentialStoreWrapper$set$1.invoke(NativeCredentialStoreWrapper.kt:24)
+	at com.intellij.credentialStore.NativeCredentialStoreWrapper$queueProcessor$1.consume(NativeCredentialStoreWrapper.kt:27)
+	at com.intellij.credentialStore.NativeCredentialStoreWrapper$queueProcessor$1.consume(NativeCredentialStoreWrapper.kt:24)
+	at com.intellij.util.concurrency.QueueProcessor.lambda$null$0(QueueProcessor.java:79)
+	at com.intellij.util.concurrency.QueueProcessor.runSafely(QueueProcessor.java:231)
+	at com.intellij.util.concurrency.QueueProcessor.lambda$wrappingProcessor$1(QueueProcessor.java:79)
+	at com.intellij.util.concurrency.QueueProcessor.lambda$null$3(QueueProcessor.java:212)
+	at com.intellij.util.concurrency.QueueProcessor.runSafely(QueueProcessor.java:231)
+	at com.intellij.util.concurrency.QueueProcessor.lambda$startProcessing$4(QueueProcessor.java:212)
+	at com.intellij.openapi.application.impl.ApplicationImpl$1.run(ApplicationImpl.java:294)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-09-21 19:30:29,914 [1887951]  ERROR - redentialStore.CredentialStore - WebStorm 2019.2.2  Build #WS-192.6603.19 
+2019-09-21 19:30:29,914 [1887951]  ERROR - redentialStore.CredentialStore - JDK: 11.0.3; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o 
+2019-09-21 19:30:29,914 [1887951]  ERROR - redentialStore.CredentialStore - OS: Linux 
+2019-09-21 19:30:29,921 [1887958]  ERROR - redentialStore.CredentialStore - Last Action: Vcs.Push 
+2019-09-21 19:51:35,018 [3153055]   WARN - ess.util.ProgressIndicatorBase - This progress indicator is indeterminate, this may lead to visual inconsistency. Please call setIndeterminate(false) before you start progress.
+com.intellij.openapi.vcs.impl.CodeSmellDetectorImpl.findCodeSmells(CodeSmellDetectorImpl.java:136) 
+2019-09-21 19:51:51,640 [3169677]   WARN - ess.util.ProgressIndicatorBase - This progress indicator is indeterminate, this may lead to visual inconsistency. Please call setIndeterminate(false) before you start progress.
+git4idea.commands.GitStandardProgressAnalyzer$1.onLineAvailable(GitStandardProgressAnalyzer.java:45) 
+** Message: 19:52:02.205: Remote error from secret service: org.freedesktop.DBus.Error.UnknownMethod: Интерфейс «org.freedesktop.Secret.Collection» для пути /org/freedesktop/secrets/collection/login объекта не найден
+2019-09-21 19:52:02,205 [3180242]  ERROR - redentialStore.CredentialStore - secret_password_store_sync error code 32623, error message null 
+java.lang.Throwable: secret_password_store_sync error code 32623, error message null
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:145)
+	at com.intellij.credentialStore.SecretCredentialStore.set(linuxSecretLibrary.kt:167)
+	at com.intellij.credentialStore.NativeCredentialStoreWrapper$set$1.invoke(NativeCredentialStoreWrapper.kt:83)
+	at com.intellij.credentialStore.NativeCredentialStoreWrapper$set$1.invoke(NativeCredentialStoreWrapper.kt:24)
+	at com.intellij.credentialStore.NativeCredentialStoreWrapper$queueProcessor$1.consume(NativeCredentialStoreWrapper.kt:27)
+	at com.intellij.credentialStore.NativeCredentialStoreWrapper$queueProcessor$1.consume(NativeCredentialStoreWrapper.kt:24)
+	at com.intellij.util.concurrency.QueueProcessor.lambda$null$0(QueueProcessor.java:79)
+	at com.intellij.util.concurrency.QueueProcessor.runSafely(QueueProcessor.java:231)
+	at com.intellij.util.concurrency.QueueProcessor.lambda$wrappingProcessor$1(QueueProcessor.java:79)
+	at com.intellij.util.concurrency.QueueProcessor.lambda$null$3(QueueProcessor.java:212)
+	at com.intellij.util.concurrency.QueueProcessor.runSafely(QueueProcessor.java:231)
+	at com.intellij.util.concurrency.QueueProcessor.lambda$startProcessing$4(QueueProcessor.java:212)
+	at com.intellij.openapi.application.impl.ApplicationImpl$1.run(ApplicationImpl.java:294)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-09-21 19:52:02,208 [3180245]  ERROR - redentialStore.CredentialStore - WebStorm 2019.2.2  Build #WS-192.6603.19 
+2019-09-21 19:52:02,208 [3180245]  ERROR - redentialStore.CredentialStore - JDK: 11.0.3; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o 
+2019-09-21 19:52:02,209 [3180246]  ERROR - redentialStore.CredentialStore - OS: Linux 
+2019-09-21 19:52:02,209 [3180246]  ERROR - redentialStore.CredentialStore - Last Action: Vcs.Push 
+2019-09-21 20:11:24,454 [4342491]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:11:24,455 [4342492]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:11:28,200 [4346237]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:11:28,202 [4346239]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:12:21,179 [4399216]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:12:21,188 [4399225]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:12:22,365 [4400402]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:12:22,366 [4400403]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:12:23,604 [4401641]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:12:23,605 [4401642]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:12:29,391 [4407428]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:12:29,392 [4407429]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:12:31,306 [4409343]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:12:31,307 [4409344]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:12:34,290 [4412327]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:12:34,290 [4412327]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:12:40,241 [4418278]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:12:40,243 [4418280]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:12:42,116 [4420153]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:12:42,117 [4420154]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:12:45,083 [4423120]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:12:45,084 [4423121]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:17:31,492 [4709529]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:17:31,493 [4709530]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:17:50,892 [4728929]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:17:50,893 [4728930]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:18:49,785 [4787822]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:18:49,786 [4787823]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:18:53,707 [4791744]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:18:53,708 [4791745]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:18:56,419 [4794456]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:18:56,420 [4794457]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:19:44,984 [4843021]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:19:44,984 [4843021]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:20:17,446 [4875483]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:20:17,447 [4875484]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:20:18,773 [4876810]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:20:18,774 [4876811]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:20:39,701 [4897738]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:20:39,702 [4897739]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:24:53,213 [5151250]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:24:53,213 [5151250]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:24:59,693 [5157730]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:24:59,694 [5157731]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:25:10,235 [5168272]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:25:10,236 [5168273]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:25:20,447 [5178484]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:25:20,448 [5178485]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:25:23,525 [5181562]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:25:23,526 [5181563]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:25:25,651 [5183688]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:25:25,651 [5183688]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:25:29,420 [5187457]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:25:29,421 [5187458]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:25:46,534 [5204571]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:25:46,535 [5204572]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:25:50,491 [5208528]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:25:50,491 [5208528]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:25:52,492 [5210529]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:25:52,496 [5210533]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:25:53,389 [5211426]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:25:53,390 [5211427]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:25:54,302 [5212339]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:25:54,302 [5212339]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:25:54,678 [5212715]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:25:54,678 [5212715]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:25:58,584 [5216621]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:25:58,585 [5216622]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:26:05,408 [5223445]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:26:05,409 [5223446]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:26:05,785 [5223822]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:26:05,785 [5223822]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:26:14,805 [5232842]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:26:14,806 [5232843]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:26:15,392 [5233429]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:26:15,393 [5233430]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:28:42,939 [5380976]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:28:42,940 [5380977]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:28:47,316 [5385353]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:28:47,316 [5385353]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:34:38,292 [5736329]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:34:38,292 [5736329]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:34:39,880 [5737917]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:34:39,881 [5737918]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:34:55,195 [5753232]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:34:55,196 [5753233]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:35:02,326 [5760363]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:35:02,326 [5760363]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:35:02,941 [5760978]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:35:02,941 [5760978]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:39:18,769 [6016806]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:39:18,770 [6016807]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:39:19,241 [6017278]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:39:19,242 [6017279]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:39:47,763 [6045800]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:39:47,763 [6045800]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:39:55,307 [6053344]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:39:55,307 [6053344]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:39:56,726 [6054763]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:39:56,730 [6054767]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:39:58,087 [6056124]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:39:58,087 [6056124]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:40:04,145 [6062182]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:40:04,146 [6062183]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:40:56,126 [6114163]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:40:56,127 [6114164]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:41:00,506 [6118543]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:41:00,510 [6118547]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:41:01,663 [6119700]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:41:01,667 [6119704]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:41:03,531 [6121568]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:41:03,532 [6121569]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:41:05,840 [6123877]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:41:05,841 [6123878]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:41:07,132 [6125169]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:41:07,133 [6125170]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:41:32,493 [6150530]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:41:32,494 [6150531]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:41:34,515 [6152552]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:41:34,515 [6152552]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 20:46:56,177 [6474214]   WARN - ess.util.ProgressIndicatorBase - This progress indicator is indeterminate, this may lead to visual inconsistency. Please call setIndeterminate(false) before you start progress.
+com.intellij.openapi.vcs.impl.CodeSmellDetectorImpl.findCodeSmells(CodeSmellDetectorImpl.java:136) 
+2019-09-21 20:47:09,815 [6487852]   WARN - ess.util.ProgressIndicatorBase - This progress indicator is indeterminate, this may lead to visual inconsistency. Please call setIndeterminate(false) before you start progress.
+git4idea.commands.GitStandardProgressAnalyzer$1.onLineAvailable(GitStandardProgressAnalyzer.java:45) 
+** Message: 20:47:26.578: Remote error from secret service: org.freedesktop.DBus.Error.UnknownMethod: Интерфейс «org.freedesktop.Secret.Collection» для пути /org/freedesktop/secrets/collection/login объекта не найден
+2019-09-21 20:47:26,579 [6504616]  ERROR - redentialStore.CredentialStore - secret_password_store_sync error code 32623, error message null 
+java.lang.Throwable: secret_password_store_sync error code 32623, error message null
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:145)
+	at com.intellij.credentialStore.SecretCredentialStore.set(linuxSecretLibrary.kt:167)
+	at com.intellij.credentialStore.NativeCredentialStoreWrapper$set$1.invoke(NativeCredentialStoreWrapper.kt:83)
+	at com.intellij.credentialStore.NativeCredentialStoreWrapper$set$1.invoke(NativeCredentialStoreWrapper.kt:24)
+	at com.intellij.credentialStore.NativeCredentialStoreWrapper$queueProcessor$1.consume(NativeCredentialStoreWrapper.kt:27)
+	at com.intellij.credentialStore.NativeCredentialStoreWrapper$queueProcessor$1.consume(NativeCredentialStoreWrapper.kt:24)
+	at com.intellij.util.concurrency.QueueProcessor.lambda$null$0(QueueProcessor.java:79)
+	at com.intellij.util.concurrency.QueueProcessor.runSafely(QueueProcessor.java:231)
+	at com.intellij.util.concurrency.QueueProcessor.lambda$wrappingProcessor$1(QueueProcessor.java:79)
+	at com.intellij.util.concurrency.QueueProcessor.lambda$null$3(QueueProcessor.java:212)
+	at com.intellij.util.concurrency.QueueProcessor.runSafely(QueueProcessor.java:231)
+	at com.intellij.util.concurrency.QueueProcessor.lambda$startProcessing$4(QueueProcessor.java:212)
+	at com.intellij.openapi.application.impl.ApplicationImpl$1.run(ApplicationImpl.java:294)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-09-21 20:47:26,579 [6504616]  ERROR - redentialStore.CredentialStore - WebStorm 2019.2.2  Build #WS-192.6603.19 
+2019-09-21 20:47:26,579 [6504616]  ERROR - redentialStore.CredentialStore - JDK: 11.0.3; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o 
+2019-09-21 20:47:26,579 [6504616]  ERROR - redentialStore.CredentialStore - OS: Linux 
+2019-09-21 20:47:26,579 [6504616]  ERROR - redentialStore.CredentialStore - Last Action: Vcs.Push 
+** Message: 20:48:10.001: Remote error from secret service: org.freedesktop.DBus.Error.UnknownMethod: Интерфейс «org.freedesktop.Secret.Collection» для пути /org/freedesktop/secrets/collection/login объекта не найден
+2019-09-21 20:48:10,001 [6548038]  ERROR - redentialStore.CredentialStore - secret_password_store_sync error code 32623, error message null 
+java.lang.Throwable: secret_password_store_sync error code 32623, error message null
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:145)
+	at com.intellij.credentialStore.SecretCredentialStore.set(linuxSecretLibrary.kt:167)
+	at com.intellij.credentialStore.NativeCredentialStoreWrapper$set$1.invoke(NativeCredentialStoreWrapper.kt:83)
+	at com.intellij.credentialStore.NativeCredentialStoreWrapper$set$1.invoke(NativeCredentialStoreWrapper.kt:24)
+	at com.intellij.credentialStore.NativeCredentialStoreWrapper$queueProcessor$1.consume(NativeCredentialStoreWrapper.kt:27)
+	at com.intellij.credentialStore.NativeCredentialStoreWrapper$queueProcessor$1.consume(NativeCredentialStoreWrapper.kt:24)
+	at com.intellij.util.concurrency.QueueProcessor.lambda$null$0(QueueProcessor.java:79)
+	at com.intellij.util.concurrency.QueueProcessor.runSafely(QueueProcessor.java:231)
+	at com.intellij.util.concurrency.QueueProcessor.lambda$wrappingProcessor$1(QueueProcessor.java:79)
+	at com.intellij.util.concurrency.QueueProcessor.lambda$null$3(QueueProcessor.java:212)
+	at com.intellij.util.concurrency.QueueProcessor.runSafely(QueueProcessor.java:231)
+	at com.intellij.util.concurrency.QueueProcessor.lambda$startProcessing$4(QueueProcessor.java:212)
+	at com.intellij.openapi.application.impl.ApplicationImpl$1.run(ApplicationImpl.java:294)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-09-21 20:48:10,002 [6548039]  ERROR - redentialStore.CredentialStore - WebStorm 2019.2.2  Build #WS-192.6603.19 
+2019-09-21 20:48:10,002 [6548039]  ERROR - redentialStore.CredentialStore - JDK: 11.0.3; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o 
+2019-09-21 20:48:10,002 [6548039]  ERROR - redentialStore.CredentialStore - OS: Linux 
+2019-09-21 20:48:10,002 [6548039]  ERROR - redentialStore.CredentialStore - Last Action: Vcs.Push 
+2019-09-21 22:53:32,804 [14070841]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 22:53:32,805 [14070842]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 22:54:00,718 [14098755]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 22:54:00,719 [14098756]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 22:54:04,783 [14102820]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 22:54:04,784 [14102821]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 23:36:42,709 [16660746]   WARN - ess.util.ProgressIndicatorBase - This progress indicator is indeterminate, this may lead to visual inconsistency. Please call setIndeterminate(false) before you start progress.
+com.intellij.openapi.vcs.impl.CodeSmellDetectorImpl.findCodeSmells(CodeSmellDetectorImpl.java:136) 
+2019-09-21 23:36:56,004 [16674041]   WARN - ess.util.ProgressIndicatorBase - This progress indicator is indeterminate, this may lead to visual inconsistency. Please call setIndeterminate(false) before you start progress.
+git4idea.commands.GitStandardProgressAnalyzer$1.onLineAvailable(GitStandardProgressAnalyzer.java:45) 
+** Message: 23:36:58.023: Remote error from secret service: org.freedesktop.DBus.Error.UnknownMethod: Интерфейс «org.freedesktop.Secret.Collection» для пути /org/freedesktop/secrets/collection/login объекта не найден
+2019-09-21 23:36:58,024 [16676061]  ERROR - redentialStore.CredentialStore - secret_password_store_sync error code 32623, error message null 
+java.lang.Throwable: secret_password_store_sync error code 32623, error message null
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:145)
+	at com.intellij.credentialStore.SecretCredentialStore.set(linuxSecretLibrary.kt:167)
+	at com.intellij.credentialStore.NativeCredentialStoreWrapper$set$1.invoke(NativeCredentialStoreWrapper.kt:83)
+	at com.intellij.credentialStore.NativeCredentialStoreWrapper$set$1.invoke(NativeCredentialStoreWrapper.kt:24)
+	at com.intellij.credentialStore.NativeCredentialStoreWrapper$queueProcessor$1.consume(NativeCredentialStoreWrapper.kt:27)
+	at com.intellij.credentialStore.NativeCredentialStoreWrapper$queueProcessor$1.consume(NativeCredentialStoreWrapper.kt:24)
+	at com.intellij.util.concurrency.QueueProcessor.lambda$null$0(QueueProcessor.java:79)
+	at com.intellij.util.concurrency.QueueProcessor.runSafely(QueueProcessor.java:231)
+	at com.intellij.util.concurrency.QueueProcessor.lambda$wrappingProcessor$1(QueueProcessor.java:79)
+	at com.intellij.util.concurrency.QueueProcessor.lambda$null$3(QueueProcessor.java:212)
+	at com.intellij.util.concurrency.QueueProcessor.runSafely(QueueProcessor.java:231)
+	at com.intellij.util.concurrency.QueueProcessor.lambda$startProcessing$4(QueueProcessor.java:212)
+	at com.intellij.openapi.application.impl.ApplicationImpl$1.run(ApplicationImpl.java:294)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-09-21 23:36:58,025 [16676062]  ERROR - redentialStore.CredentialStore - WebStorm 2019.2.2  Build #WS-192.6603.19 
+2019-09-21 23:36:58,025 [16676062]  ERROR - redentialStore.CredentialStore - JDK: 11.0.3; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o 
+2019-09-21 23:36:58,025 [16676062]  ERROR - redentialStore.CredentialStore - OS: Linux 
+2019-09-21 23:36:58,026 [16676063]  ERROR - redentialStore.CredentialStore - Last Action: Vcs.Push 
+2019-09-21 23:38:21,578 [16759615]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 23:38:21,579 [16759616]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 23:40:35,401 [16893438]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 23:40:35,401 [16893438]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 23:40:36,386 [16894423]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 23:40:36,386 [16894423]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 23:40:38,348 [16896385]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 23:40:38,348 [16896385]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 23:40:39,568 [16897605]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-21 23:40:39,569 [16897606]   WARN - j.psi.css.impl.CssSelectorImpl - Cannot create ampersand selector for parent selector '#{str-fr('.q-col-gutter<name>', $name)}' and child selector '&-#{$gname}' 
+2019-09-22 00:00:24,731 [18082768]   WARN - ess.util.ProgressIndicatorBase - This progress indicator is indeterminate, this may lead to visual inconsistency. Please call setIndeterminate(false) before you start progress.
+com.intellij.openapi.vcs.impl.CodeSmellDetectorImpl.findCodeSmells(CodeSmellDetectorImpl.java:136) 
+2019-09-22 00:00:35,839 [18093876]   WARN - ess.util.ProgressIndicatorBase - This progress indicator is indeterminate, this may lead to visual inconsistency. Please call setIndeterminate(false) before you start progress.
+git4idea.commands.GitStandardProgressAnalyzer$1.onLineAvailable(GitStandardProgressAnalyzer.java:45) 
+** Message: 00:00:37.408: Remote error from secret service: org.freedesktop.DBus.Error.UnknownMethod: Интерфейс «org.freedesktop.Secret.Collection» для пути /org/freedesktop/secrets/collection/login объекта не найден
+2019-09-22 00:00:37,409 [18095446]  ERROR - redentialStore.CredentialStore - secret_password_store_sync error code 32623, error message null 
+java.lang.Throwable: secret_password_store_sync error code 32623, error message null
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:145)
+	at com.intellij.credentialStore.SecretCredentialStore.set(linuxSecretLibrary.kt:167)
+	at com.intellij.credentialStore.NativeCredentialStoreWrapper$set$1.invoke(NativeCredentialStoreWrapper.kt:83)
+	at com.intellij.credentialStore.NativeCredentialStoreWrapper$set$1.invoke(NativeCredentialStoreWrapper.kt:24)
+	at com.intellij.credentialStore.NativeCredentialStoreWrapper$queueProcessor$1.consume(NativeCredentialStoreWrapper.kt:27)
+	at com.intellij.credentialStore.NativeCredentialStoreWrapper$queueProcessor$1.consume(NativeCredentialStoreWrapper.kt:24)
+	at com.intellij.util.concurrency.QueueProcessor.lambda$null$0(QueueProcessor.java:79)
+	at com.intellij.util.concurrency.QueueProcessor.runSafely(QueueProcessor.java:231)
+	at com.intellij.util.concurrency.QueueProcessor.lambda$wrappingProcessor$1(QueueProcessor.java:79)
+	at com.intellij.util.concurrency.QueueProcessor.lambda$null$3(QueueProcessor.java:212)
+	at com.intellij.util.concurrency.QueueProcessor.runSafely(QueueProcessor.java:231)
+	at com.intellij.util.concurrency.QueueProcessor.lambda$startProcessing$4(QueueProcessor.java:212)
+	at com.intellij.openapi.application.impl.ApplicationImpl$1.run(ApplicationImpl.java:294)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2019-09-22 00:00:37,410 [18095447]  ERROR - redentialStore.CredentialStore - WebStorm 2019.2.2  Build #WS-192.6603.19 
+2019-09-22 00:00:37,410 [18095447]  ERROR - redentialStore.CredentialStore - JDK: 11.0.3; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o 
+2019-09-22 00:00:37,410 [18095447]  ERROR - redentialStore.CredentialStore - OS: Linux 
+2019-09-22 00:00:37,411 [18095448]  ERROR - redentialStore.CredentialStore - Last Action: Vcs.Push 
